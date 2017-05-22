@@ -1,0 +1,66 @@
+#ifndef CONFIG_H_INCLUDED
+#define CONFIG_H_INCLUDED
+
+#define     pi        3.14
+#define     g         10
+#define     Max       100
+#define     END       20.01
+#define     INIT      0
+#define     delta     0.1
+
+
+    double vy                                                 ;
+    double vx                                                 ;
+    double ay                                                 ;
+    double ax                                                 ;
+    double delta_vy                                           ;
+    double delta_vx                                           ;
+    double M                                                  ;
+    double d                                                  ;
+    double v                                                  ;
+    double b                                                  ;
+    double e                                                  ;
+    double mu                                                 ;
+    double y                                                  ;
+    double x                                                  ;
+    double theta                                              ;
+    double t                                                  ;
+    int    i                                                  ;
+    int    j                                                  ;
+    double k                                                  ;
+    double delta_t                ;
+    double delta_y                ;
+    double delta_x                ;
+    double arr_x[Max]             ;
+    double arr_y[Max]             ;
+    double arr_t[Max]             ;
+    double counter                ;
+    double data[Max]              ;
+
+
+
+void WelcomeMessasge();
+void InitValues ();
+void ChooseModes();
+void EnterValues();
+
+void ReadInputs();
+void Bouncing () ;
+
+void Projectile () ;
+void Simulate();
+
+void WriteOutputs();
+void ModeA ();
+
+void ModeB();
+void WriteOutputs();
+
+void Control();
+void VelocityIncrearse();
+
+void ThetaIncrearse();
+void Thetadecrearse();
+
+
+#endif // CONFIG_H_INCLUDED
